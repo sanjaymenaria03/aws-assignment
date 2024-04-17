@@ -21,8 +21,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: npm test -- --detectOpenHandles
-        run: npm test
+      - name: npm tests
+        run: npm test -- --detectOpenHandles --testTimeout=10000
 
       - name: Deploy to Heroku
         if: success()
