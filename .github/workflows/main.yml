@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run tests
+      - name: Run tests --detectOpenHandles
         run: npm test
 
       - name: Deploy to Heroku
